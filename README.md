@@ -20,6 +20,8 @@ A patch for the official ShotKam Android app that keeps the clock of a **ShotKam
 
 The date stamp that the camera draws into the video shows the lagged year (2018). The patch cannot change those pixels. Set **Date stamp** to *Logo* or *Off* in the app settings if that matters to you.
 
+On the card, folder names (`MM-DD-2018`), file times and MP4 headers keep the lagged year. The camera protocol has no rename command, so the app cannot change them. Clips that the app downloads get the real year. For clips copied by USB, run `scripts/fix_shotkam_dates.py <folder> --add-years 8 --apply`.
+
 ## What the patch changes
 
 The app UI and all other features stay as they are. `patch/patch_smali.py` adds 4 calls to `patch/LagFix/com/shotkam/android/LagFix.java`:
