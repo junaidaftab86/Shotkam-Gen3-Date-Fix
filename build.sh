@@ -3,7 +3,7 @@
 #
 #   ./build.sh [input]
 #
-# Input (default: the first that exists; see upstream/README.md):
+# Input (default: the first that exists; see README):
 #   upstream/ShotKam.apks   full split set exported from the phone (preferred)
 #   upstream/ShotKam.apk    single APK (a base-only APK has no libvlc: video does not play)
 #
