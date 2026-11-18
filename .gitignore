@@ -1,0 +1,14 @@
+# Build tools and output
+.tools/
+work/
+*.apk
+*.idsig
+# Your copy of the official app: never commit it
+upstream/*
+!upstream/README.md
+# Signing keys
+*.keystore
+*.jks
+*.b64
+__pycache__/
+clips/
